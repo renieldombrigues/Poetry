@@ -1,0 +1,152 @@
+*{
+
+	margin: 0;
+	padding: 0;
+	font-family: Masqualero Bold;
+	box-sizing: border-box;
+
+}
+
+body{
+
+	height: 100%;
+	display: grid;
+	place-items: center;
+	background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6)), url(background9.gif);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+
+}
+
+table{
+
+	width: 900px;
+	box-shadow: -1px 12px 12px -6px rgba(0,0,0,0.5);
+
+}
+
+table, td, th{
+
+	th1 border-radius: 5px;
+	padding: 20px;
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+	cursor: pointer;
+
+}
+
+td{
+
+	font-size: 18px;
+
+}
+
+th{
+
+	background-color: #1b2d48;
+	color: white;
+
+}
+
+tr:nth-child(odd){
+	background-color: #3c649f;
+}
+
+tr:nth-child(odd):hover{
+	background-color: lightgray;
+	color: black;
+	transform: scale(1.5);
+	transition: transform 120ms ease-in;
+
+}
+
+tr:nth-child(even){
+	background-color: #4779c4;
+
+}
+
+tr:nth-child(even):hover{
+	background-color: lightgray;
+	transform: scale(1.5);
+	transition: transform 300ms ease-in;
+
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+    padding: 100px 8% 120px;
+
+}
+.content-text{
+    margin-bottom: 10px;
+}
+.content-text h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 0px 1px 1px black;
+    text-align: center;
+}
+.content-text h2 span{
+    color: #83aff0;
+    text-shadow: 2px 2px black;
+    text-align: center;
+}
+.content-text p{
+    font-weight: bold;
+    color: white;
+}
+.list{
+    margin-top: 16px;
+}
+.list li{
+    margin-bottom: 12px;
+}
+.list li a{
+    display: block;
+    color: #388b6f;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+.contact-form form{
+    position: relative;
+}
+.contact-form form input,
+form textarea{
+    width: 100%;
+    padding: 10px;
+    background: lightgray;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.contact-form textarea{
+    resize: none;
+    height: 100px;
+}
+.contact-form .submit{
+    display: inline-block;
+    font-size: 15px;
+    background: #3c649f;
+    color: white;
+    width: 160px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.contact-form .submit:hover{
+    width: 175px;
+}
+@media (max-width:920px){
+    .contact{
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+}
